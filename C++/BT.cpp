@@ -34,15 +34,15 @@ Node* insertToBST(Node* root,int d)
 	return root;
 }
 
-void inOrder(Node* root)
+void inOrder(Node* root1)
 {
-	if(root==NULL)
+	if(root1==NULL)
 	{
 		return;
 	}
-	inOrder(root->left);
-	cout<< root->data <<" ";
-	inOrder(root->right);
+	inOrder(root1->left);
+	cout<< root1->data <<" ";
+	inOrder(root1->right);
 }
 
 void preOrder(Node* root)
